@@ -1,0 +1,11 @@
+<a href="/contacts/gmail">Gmail</a>
+
+<% if !@contacts.nil?%>
+	<% @contacts.each do |c|%>
+	  <ul>
+	    <li><%= c[:name]%> : <%= c[:email]%></li>
+	  </ul>
+	<% end %>
+<% else %>
+  <h2> Contacts nil </h2>	
+<% end %>
