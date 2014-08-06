@@ -1,11 +1,5 @@
-<a href="/contacts/gmail">Gmail</a>
+ <% @contacts = fetch_contacts(current_user.oauth_token)%>
 
-<% if !@contacts.nil?%>
-	<% @contacts.each do |c|%>
-	  <ul>
-	    <li><%= c[:name]%> : <%= c[:email]%></li>
-	  </ul>
-	<% end %>
-<% else %>
-  <h2> Contacts nil </h2>	
+ <% @contacts.each do |contact| %>
+  <%= contact[:email] %>
 <% end %>

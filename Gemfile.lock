@@ -1,3 +1,17 @@
+GIT
+  remote: git://github.com/abhilashak/contacts.git
+  revision: 1a525c3334722397b37f6fd6b7cc482a9a069d3b
+  specs:
+    contacts (1.2.4)
+      gdata (= 1.1.2)
+      json (>= 1.1.1)
+
+GIT
+  remote: git://github.com/juanpastas/gdata.git
+  revision: fae93bd449d44044dbd0d565946b6ba0e21cb772
+  specs:
+    gdata (1.1.2)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -55,9 +69,12 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.25.1)
+    mini_portile (0.6.0)
     minitest (4.7.5)
     multi_json (1.10.1)
     multipart-post (1.2.0)
+    nokogiri (1.6.3.1)
+      mini_portile (= 0.6.0)
     oauth2 (0.8.1)
       faraday (~> 0.8)
       httpauth (~> 0.1)
@@ -133,8 +150,11 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
+  contacts!
+  gdata!
   jbuilder (~> 1.2)
   jquery-rails
+  nokogiri
   omniauth-google-oauth2 (~> 0.2.1)
   omnicontacts
   rails (= 4.0.1)

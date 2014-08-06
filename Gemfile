@@ -34,6 +34,9 @@ end
 
 gem 'omniauth-google-oauth2', '~> 0.2.1'
 gem "omnicontacts"
+gem "contacts", :git => "git://github.com/abhilashak/contacts.git"
+gem 'gdata', github: 'juanpastas/gdata'
+gem "nokogiri"
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
