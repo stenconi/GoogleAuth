@@ -2,7 +2,6 @@ require 'gdata'
 require 'nokogiri'
 module HomeHelper
 
-
 def fetch_contacts(token)
   client = GData::Client::Contacts.new
   client.authsub_token = token
