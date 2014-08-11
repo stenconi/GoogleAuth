@@ -1,5 +1,4 @@
 GoogleAuth::Application.routes.draw do
-  get "invites/index"
   get 'auth/:provider/callback', to: 'sessions#create'
   get 'auth/failure', to: redirect('/')
   get 'signout', to: 'sessions#destroy', as: 'signout'
@@ -7,7 +6,8 @@ GoogleAuth::Application.routes.draw do
   resources :sessions, only: [:create, :destroy]
   resource :home
   get "/contacts/:importer/callback" => "home#contacts_callback"
-  
+  get "home/probando"
+  get "sessions/create"
   root to: "home#index"
 
   # The priority is based upon order of creation: first created -> highest priority.

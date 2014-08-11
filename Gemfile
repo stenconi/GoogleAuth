@@ -37,6 +37,7 @@ gem "omnicontacts"
 gem "contacts", :git => "git://github.com/abhilashak/contacts.git"
 gem 'gdata', github: 'juanpastas/gdata'
 gem "nokogiri"
+gem "thin"
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'

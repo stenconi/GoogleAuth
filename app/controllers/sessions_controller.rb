@@ -1,5 +1,5 @@
 class SessionsController < ApplicationController
-	def create
+  def create
     user = User.from_omniauth(env["omniauth.auth"])
     session[:user_id] = user.id
     redirect_to root_path
@@ -7,6 +7,7 @@ class SessionsController < ApplicationController
 
   def destroy
     session[:user_id] = nil
-    redirect_to root_path
+    redirect_to '/home/probando'
+
   end
 end
